@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Transendance Through Sufferring!</title>
+		<link rel = "stylesheet" src="stylesheet.css">
+		<script src="jquery.min.js"></script>
+		<!-- moved script source tag to bottom of body, was having a number of window load null errors for my total update, i thought initally it was some sort of hoisting problem. really kicked my ass copy pasting variables and functions around nesting them in various document ready functions. finally i came across something on stackoverflow. that suggested to try this. totally worked.  not the proper way to fix  the problem  but was the best i got today.-->
+	</head>
+
+	<body>
+		<h1>Fictional Employee Database Thingy</h1>
+		<span></span>
+		<h2>Total Monthly Salary for All Employees</h2>
+		<div>
+		<p id = 'totalSalary'>total salary goes here</p>
+		</div>
+		<h3>Current Employees</h3>
+		<div id='showEmployees'>
+
+		</div>
+
+		<H3>Add a New Employee</h3>
+		<div class='container'>
+			<form id='employeeinfo'>
+				
+				<label for='employeefirstname'>First name:</label>
+				<input type='text' id='employeeFirstname' name='employeeFirstname'/>
+
+				<label for='employeelastname'>Last name:</label>
+				<input type='text' id='employeeLastname' name='employeeLastname'/>
+
+				<label for='employeenumber'>ID number:</label>
+				<input type='number' id='employeeIdNumber' name='employeeIdNumber'/>
+
+				<label for='employeeJobTitle'>Title:</label>
+				<input type='text' id='employeeJobTitle' name='employeeJobTitle'/>
+				
+				<label for='employeeSalary'>Salary:</label>
+				<input type='number' id='employeeSalary' name='employeeSalary'/>
+
+
+				<input type='submit' value='Submit Employee'/>
+			</form>
+			
+
+<!-- my intial goal was to build another button that ran a loop to check for employee ids of 0 and appended them down into here. just ran out of time. -->
+			<!-- <h3>Past Employees</h3> -->
+            <!--   <form>   -->    
+           <!--      <label for='employeenumber'>ID number:</label>
+				<input type='number' id='employeeIdNumber' name='employeeIdNumber'/>
+			    <input type='submit' value='Remove This Employee'/>
+              </form>   -->  
+<!--             <div class='yourFired'>
+
+			</div> -->
+	<script type='text/javascript' src='script.js'></script>
+	</body>
+</html>
